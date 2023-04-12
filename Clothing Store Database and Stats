@@ -1,0 +1,26 @@
+-- Create a clothing store database
+
+CREATE TABLE store (id integer, name text, color text, type text, price integer);
+
+INSERT into store VALUES (1, "Ami", "Beige", "Tshirt", 349);
+INSERT into store VALUES (2, "Elle", "Tan", "Bag", 899);
+INSERT into store VALUES (3, "Becks", "Navy", "Pants", 74);
+INSERT into store VALUES (4, "May", "White", "Cami", 21);
+INSERT into store VALUES (5, "Adam", "Black", "Sweater", 200);
+INSERT into store VALUES (6, "Kelly", "Pink", "Bag", 1200);
+INSERT into store VALUES (7,"Sarah","Grey","Leggings",22);
+INSERT into store VALUES (8,"Mary Jane","Black", "Shoes", 769);
+INSERT into store VALUES (9,"Vine","Sage","Earrings",45);
+INSERT into store VALUES (10,"Cresent Medium","Multi","Bag",54);
+INSERT into store VALUES (11,"Mini Nylon","Green","Bag",48);
+INSERT into store VALUES (12,"Fanny Pack","Black","Bag",74);
+INSERT into store VALUES (13,"Pouch","Orange","Wallet",23);
+INSERT into store VALUES (14,"Large Pouch","Red","Makeup Organizer", 30);
+INSERT into store VALUES (15,"Shopping Bag","Floral","Bag",20);
+
+--arrange price in descending order
+SELECT * FROM store WHERE price > 5 ORDER BY price DESC;
+
+--check which item is the most expensive
+SELECT MAX(price) FROM store;
+
